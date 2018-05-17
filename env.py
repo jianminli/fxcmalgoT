@@ -13,10 +13,9 @@ con = fxcmpy.fxcmpy(config_file='Config.cfg', server='demo')
 start = dt.datetime(2017, 1, 1)
 stop = dt.datetime(2018, 5, 1)
 
-#data = con.get_candles('EUR/USD', period='D1',
-#               start=start, stop=stop)
+data = con.get_candles('EUR/USD', period='H1', start=start, stop=stop)
 
-#data.to_csv('newUSDJPYhourly.csv', sep='\t')
+data.to_csv('newUSDJPYhourly.csv', sep=',')
 
 #plt.style.use('seaborn')
 
