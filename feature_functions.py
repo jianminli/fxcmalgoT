@@ -256,3 +256,26 @@ def wadl(prices,periods):
     return results
 
 
+def momentum(prices,periods):
+    """
+
+    :param prices: data frame of OHLC
+    :param periods: list of periods to calculate functions
+    :return: momentum indicator
+    """
+    results = holder()
+    open = {}
+    close = {}
+    for i in range(0, len(periods)):
+        open[periods[i]] = pd.DataFrame(prices.open.iloc[periods[i]:]-prices.open.iloc[:-periods[i]].values,
+                                        index=prices.iloc[periods[i]:].index)
+        close[periods[i]] = pd.DataFrame(prices.close.iloc[periods[i]:] - prices.close.iloc[:-periods[i]].values,
+                                        index=prices.iloc[periods[i]:].index)
+        #open[periods[i]].columns=[['open']]
+        #close[periods[i]].columns=[['close']]
+
+    results.open=open
+    results.close=close
+
+    return results
+
