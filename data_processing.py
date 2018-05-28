@@ -12,7 +12,7 @@ import datetime
 from sklearn import svm
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
-
+from conn import  *
 
 
 
@@ -138,7 +138,120 @@ data['strategy'] = data['position'] * data['returns']
 data.loc[train_x.index][['returns', 'strategy']].cumsum().apply(np.exp).plot(figsize=(10, 6))
 # out of sample
 data.loc[test_x.index][['returns', 'strategy']].cumsum().apply(np.exp).plot(figsize=(10, 6))
-plt.show()
+#plt.show()
+
+
+
+#auto trading
+
+
+def output(data, dataframe):
+    print('%3d | %s | %s, %s, %s, %s, %s'
+          % (len(dataframe), data['Symbol'],
+          pd.to_datetime(int(data['Updated']), unit='ms'),
+          data['Rates'][0], data['Rates'][1],
+          data['Rates'][2], data['Rates'][3]))
+
+con = establish_conn()
+
+#con.subscribe_market_data('EUR/USD', (output,))
+
+lags = 3
+def generate_features(df, lags):
+    df['Returns'] = np.log(df['Mid'] / df['Mid'].shift(1))
+    cols=[]
+    for lag in range(1, lags + 1):
+        col = 'lag_%s' % lag
+        df[col] = np.sign(df['Returns'].shift(lag))
+        cols.append(col)
+    df.dropna(inplace=True)
+    return df, cols
+
+
+con = establish_conn()
+candles = con.get_candles('EUR/USD', period='m1', number=100)
+
+data = pd.DataFrame(candles[['askclose', 'bidclose']].mean(axis=1),
+                    columns=['Mid'])
+
+data, cols = generate_features(data, lags)
+model.fit(data[cols], np.sign(data['Returns']))
+model.predict(data[cols])[:10]
+
+
+#basic idea
+print(data[cols].iloc[-1].values)
+model.predict(data[cols].iloc[-1].values.reshape(1, -1))
+
+
+#con2 = establish_conn()
+to_show = ['tradeId', 'amountK', 'currency', 'grossPL', 'isBuy']
+ticks = 0
+position = 0
+tick_data = pd.DataFrame()
+tick_resam = pd.DataFrame()
+
+def automated_trading(data, df):
+    global lags, model, ticks
+    global tick_data, tick_resam, to_show
+    global position
+    ticks += 1
+    t = datetime.datetime.now()
+    if ticks % 5 == 0:
+        print('%3d | %s | %7.5f | %7.5f' % (ticks, str(t.time()), data['Rates'][0], data['Rates'][1]))
+
+    #collecting tick data
+    tick_data = tick_data.append(pd.DataFrame(
+        {'Bid': data['Rates'][0], 'Ask': data['Rates'][1],
+         'High': data['Rates'][2], 'Low': data['Rates'][3]},
+        index=[t]
+    ))
+
+    #resampling tick data for 5 seconds interval
+    tick_resam = tick_data[['Bid', 'Ask']].resample('5s', label='right').last().ffill()
+    tick_resam['Mid'] = tick_resam.mean(axis=1)
+
+    if len(tick_resam) > lags + 2:
+        #generating a signal
+        tick_resam, cols = generate_features(tick_resam, lags)
+        tick_resam['Prediction'] = model.predict(tick_resam[cols])
+        #Entering a long position
+        if tick_resam['Prediction'].iloc[-2] >= 0 and position == 0:
+            print('going long (for the first time)')
+            position = 1
+            order = con.create_market_buy_order('EUR/USD', 25)
+            trade = True
+        elif tick_resam['Prediction'].iloc[-2] >= 0 and position == -1:
+            print('going long')
+            position = 1
+            order = con.create_market_buy_order('EUR/USD', 50)
+            trade = True
+        elif tick_resam['Prediction'].iloc[-2] <= 0 and position == 0:
+            print('going short (for the first time)')
+            position = -1
+            order = con.create_market_sell_order('EUR/USD', 25)
+            trade = True
+        elif tick_resam['Prediction'].iloc[-2] <= 0 and position == -1:
+            print('going short ')
+            position = -1
+            order = con.create_market_sell_order('EUR/USD', 50)
+            trade = True
+    if ticks > 100:
+        con.unsubscribe_market_data('EUR/USD')
+        try:
+            con.close_all()
+        except:
+            pass
+
+
+con.subscribe_market_data('EUR/USD', (automated_trading,))
+print(tick_data.tail())
+print(tick_resam.tail())
+try:
+    print(con.get_open_positions([to_show]))
+except:
+    print('no open positions')
+
 
 
 
