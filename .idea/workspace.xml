@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b69aff20-736d-499e-898d-8cff4e6cf941" name="Default" comment="" />
+    <list default="true" id="b69aff20-736d-499e-898d-8cff4e6cf941" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_processing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/env.py" beforeDir="false" afterPath="$PROJECT_DIR$/env.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/error.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature_collector.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_collector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/feature_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/feature_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/newUSDJPYhourly.csv" beforeDir="false" afterPath="$PROJECT_DIR$/newUSDJPYhourly.csv" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,49 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Config.cfg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Config.cfg">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="12" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="error.log" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/error.log">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="plotting.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plotting.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="12" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="env.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/env.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="35" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="35" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="feature_collector.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="feature_collector.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/feature_collector.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="49">
+              <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -70,37 +40,71 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>acce</find>
-      <find>env</find>
       <find>trading_url</find>
       <find>pd</find>
+      <find>env</find>
+      <find>fig</find>
+      <find>data</find>
+      <find>py</find>
+      <find>print</find>
+      <find>strats</find>
+      <find>to_plot</find>
+      <find>predict_proba</find>
+      <find>probabilities</find>
+      <find>colscols</find>
+      <find>cols</find>
+      <find>direction</find>
+      <find>plot</find>
+      <find>model</find>
+      <find>subscribe</find>
+      <find>to_show</find>
+      <find>con2</find>
+      <find>'position'</find>
+      <find>m1</find>
+      <find>5s</find>
+      <find>100</find>
+      <find>plt</find>
+      <find>keylist</find>
+      <find>int</find>
     </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Config.cfg.py" />
         <option value="$PROJECT_DIR$/Config.cfg" />
+        <option value="$PROJECT_DIR$/plotting.py" />
+        <option value="$PROJECT_DIR$/plotting2.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/conn.py" />
+        <option value="$PROJECT_DIR$/newUSDJPYhourly.csv" />
+        <option value="$PROJECT_DIR$/streaming_data.py" />
+        <option value="$PROJECT_DIR$/env.py" />
+        <option value="$PROJECT_DIR$/data_processing.py" />
         <option value="$PROJECT_DIR$/feature_functions.py" />
         <option value="$PROJECT_DIR$/feature_collector.py" />
-        <option value="$PROJECT_DIR$/plotting.py" />
-        <option value="$PROJECT_DIR$/env.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="58" />
-    <option name="y" value="36" />
-    <option name="width" value="1326" />
-    <option name="height" value="812" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1440" />
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -112,10 +116,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/jianmin/PycharmProjects/fxcmAlgoT/streaming_data.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -135,7 +139,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.env">
+  <component name="RunManager" selected="Python.feature_collector">
+    <configuration name="data_processing" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="fxcmAlgoT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_processing.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="env" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="fxcmAlgoT" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -172,7 +194,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="plotting" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="streaming_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="fxcmAlgoT" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -184,7 +206,25 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotting.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/streaming_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="fxcmAlgoT" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -192,14 +232,18 @@
     </configuration>
     <list>
       <item itemvalue="Python.env" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python.data_processing" />
+      <item itemvalue="Python.streaming_data" />
       <item itemvalue="Python.feature_collector" />
-      <item itemvalue="Python.plotting" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.env" />
-        <item itemvalue="Python.plotting" />
         <item itemvalue="Python.feature_collector" />
+        <item itemvalue="Python.data_processing" />
+        <item itemvalue="Python.env" />
+        <item itemvalue="Python.streaming_data" />
+        <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
   </component>
@@ -214,40 +258,164 @@
       <option name="presentableId" value="Default" />
       <updated>1526092716936</updated>
     </task>
+    <task id="LOCAL-00001" summary="second">
+      <created>1526570737490</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526570737490</updated>
+    </task>
+    <task id="LOCAL-00002" summary="second">
+      <created>1526825810219</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526825810229</updated>
+    </task>
+    <task id="LOCAL-00003" summary="second">
+      <created>1527032357750</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1527032357750</updated>
+    </task>
+    <task id="LOCAL-00004" summary="second">
+      <created>1527117100084</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1527117100084</updated>
+    </task>
+    <task id="LOCAL-00005" summary="second">
+      <created>1527117116221</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1527117116221</updated>
+    </task>
+    <task id="LOCAL-00006" summary="thrid">
+      <created>1527465567268</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1527465567268</updated>
+    </task>
+    <task id="LOCAL-00007" summary="forth">
+      <created>1527520178241</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1527520178241</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="36" width="1326" height="812" extended-state="0" />
+    <frame x="1440" y="23" width="1440" height="877" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24962293" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23326287" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3184282" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32051283" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32985657" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.31153846" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39871794" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39972898" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="second" />
+    <MESSAGE value="thrid" />
+    <MESSAGE value="forth" />
+    <option name="LAST_COMMIT_MESSAGE" value="forth" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/feature_functions.py</url>
+          <line>160</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="7" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="len(coeffs)" language="Python" />
+        <watch expression="np.array(coeffs)" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>np.array(coeffs)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>len(coeffs)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/env.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotting.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="34" column="4" selection-start-line="34" selection-end-line="34" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newUSDJPYhourly.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125685">
+          <caret line="8379" column="24" selection-start-line="8379" selection-end-line="8380" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_collector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plotting2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Config.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -263,16 +431,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Config.cfg.py" />
-    <entry file="file://$PROJECT_DIR$/feature_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="31" lean-forward="true" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-          <folding>
-            <element signature="e#173#192#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/fxcm/lib/python3.6/codecs.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="312">
@@ -294,16 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/USDJPYHourly.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/feature_collector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Config.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -311,36 +459,121 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/error.log">
+    <entry file="file://$PROJECT_DIR$/plotting2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-350">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataprocessing.html">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newUSDJPYhourly.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="769">
+          <caret line="8380" selection-start-line="8380" selection-end-line="8380" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/fxcm/lib/python3.6/threading.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="915" selection-start-line="915" selection-end-line="915" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/fxcm/lib/python3.6/site-packages/pandas/core/frame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="315" column="8" selection-start-line="315" selection-start-column="8" selection-end-line="315" selection-end-column="8" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/fxcm/lib/python3.6/site-packages/fxcmpy/fxcmpy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2416">
-          <caret line="1857" column="8" selection-start-line="1857" selection-start-column="8" selection-end-line="1857" selection-end-column="8" />
+        <state relative-caret-position="154">
+          <caret line="1881" column="35" selection-start-line="1881" selection-start-column="32" selection-end-line="1881" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="22" selection-start-line="8" selection-start-column="22" selection-end-line="8" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/plotting.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="12" />
+        <state relative-caret-position="269">
+          <caret line="36" selection-start-line="36" selection-end-line="42" selection-end-column="46" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/newUSDJPYhourly.csv">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/USDJPYHourly.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" column="55" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/streaming_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/env.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="35" selection-start-line="27" selection-start-column="31" selection-end-line="27" selection-end-column="35" />
+        <state relative-caret-position="323">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_processing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="239" column="18" selection-start-line="239" selection-start-column="15" selection-end-line="239" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/fxcm/lib/python3.6/site-packages/tensorflow/python/training/momentum.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1392" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="77" lean-forward="true" selection-start-line="77" selection-end-line="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/feature_collector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="49">
+          <caret line="52" column="46" selection-start-line="52" selection-start-column="46" selection-end-line="52" selection-end-column="46" />
         </state>
       </provider>
     </entry>

@@ -154,11 +154,11 @@ def fourier(prices,periods,method='difference'):
 
                 plt.plot(x,y)
                 plt.plot(xt,yt,'r')
-                plt.show()
+                #plt.show()
             coeffs = np.append(coeffs,res[0],axis=0)
 
         warnings.filterwarnings('ignore',category=np.VisibleDeprecationWarning)
-        coeffs = np.array(coeffs).reshape(((len(coeffs)/4,4)))
+        coeffs = np.array(coeffs).reshape((len(coeffs)/4, 4))
         df = pd.DataFrame(coeffs,index=prices.iloc[periods[i]:-periods[i]])
         df.columns = [['a0','a1','b1','w']]
         df = df.fillna(method='bfill')
@@ -202,7 +202,7 @@ def sine(prices,periods,method='difference'):
 
                 plt.plot(x,y)
                 plt.plot(xt,yt,'r')
-                plt.show()
+                #plt.show()
             coeffs = np.append(coeffs,res[0],axis=0)
 
         warnings.filterwarnings('ignore',category=np.VisibleDeprecationWarning)

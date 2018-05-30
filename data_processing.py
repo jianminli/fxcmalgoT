@@ -169,7 +169,8 @@ def generate_features(df, lags):
 
 
 con = establish_conn()
-candles = con.get_candles('EUR/USD', period='m1', number=100)
+
+candles = con.get_candles('EUR/USD', period='m15', number=100)
 
 data = pd.DataFrame(candles[['askclose', 'bidclose']].mean(axis=1),
                     columns=['Mid'])
@@ -208,7 +209,7 @@ def automated_trading(data, df):
     ))
 
     #resampling tick data for 5 seconds interval
-    tick_resam = tick_data[['Bid', 'Ask']].resample('5s', label='right').last().ffill()
+    tick_resam = tick_data[['Bid', 'Ask']].resample('1800s', label='right').last().ffill()
     tick_resam['Mid'] = tick_resam.mean(axis=1)
 
     if len(tick_resam) > lags + 2:

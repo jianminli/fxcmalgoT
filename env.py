@@ -27,8 +27,9 @@ con = establish_conn()
 #                       amount='1000', time_in_force='GTC',
 #                       order_type='AtMarket', limit=120)
 #con.get_open_positions()
-open_pos=con.get_open_positions()['tradeId']
-print(open_pos)
-con.close_trade(trade_id=open_pos[0], amount=500)
+print(con.get_open_positions())
+#open_pos=con.get_open_positions()['tradeId']
+#print(open_pos)
+#con.close_trade(trade_id=open_pos[0], amount=500)
 print('end')
 
